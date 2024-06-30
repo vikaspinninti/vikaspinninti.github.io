@@ -5,19 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vikas Portfolio</title>
     <link rel="stylesheet" href="style.css"
+    <script src="https://kit.fontawesome.com/41a8b0f30e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 <div id="header">
     <div class="container">
         <nav>
             <img src="images/logo.png" class="logo">
-            <ul>
+            <ul id="sidemenu">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Services</a></li>
                 <li><a href="#">Portfolio</a></li>
                 <li><a href="#">Contact</a></li>
+                <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
             </ul>
+            <i class="fa-solid fa-bars"onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
             <div>
@@ -29,7 +33,7 @@
                 <span class="letter">s</span>
                 <span class="letter">!</span>
             </h1></div>
-            <p> Amazon Web Services Engineer</p>
+            <p> Amazon Web Services Engineer</p>    
         </div>
     </div>
 </div>
@@ -86,8 +90,106 @@
 <!--Services-->
 
 <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Developer</h2>
+                <p>Im web Developer</p>
+                <a href="#">Learn more</a>
+            </div>
 
+            <div>
+                <i class="fa-brands fa-aws"></i>
+                <h2>Cloud Developer</h2>
+                <p>Im web Developer</p>
+                <a href="#">Learn more</a>
+            </div>
+
+            <div>
+                <i class="fa-brands fa-java"></i>
+                <h2>Mern Developer</h2>
+                <p>Im web Developer</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
 </div>
+
+
+<!-- Portfolio-->
+
+<div id="portfolio">
+    <div class="container">
+        <div class="sub-title"> My Work</div>
+        <div class="work-list">
+            
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3> Social Media App</h3>
+                    <p> Social Media</p>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3> Social Media App</h3>
+                    <p> Social Media</p>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3> Social Media App</h3>
+                    <p> Social Media</p>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </div>
+            </div>
+        
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+
+
+<!--Contact-->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p> <i class="fa-solid fa-at"></i> post.vikaspinninti@gmail.com</p>
+                <p> <i class="fa-solid fa-phone"></i> 8074837405</p>
+                <div class="social-media-icons">
+                    <a href="https://www.instagram.com/mr_._selenophile/"><i class="fa-brands fa-linkedin"></i></i></a>
+                    <a href="https://www.instagram.com/mr_._selenophile/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://x.com/PinnintiVikas"><i class="fa-brands fa-twitter"></i></i></a>
+                    <a href="https://t.me/vikas_pinninti"><i class="fa-brands fa-telegram"></i></i></a>
+                </div>
+                <a href="images/Vikas Resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Thank You for Visiting <i class="fa-solid fa-heart"></i></p>
+    </div>
+</div>
+
 
 <script>
     function opentab(tabname) {
@@ -105,6 +207,18 @@
         event.currentTarget.classList.add("active-link");
         document.getElementById(tabname).classList.add("active-tab");
     }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+    
 </script>
 
 </body>
