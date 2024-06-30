@@ -4,11 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vikas Portfolio</title>
-    <style>
-        .content p {
-            line-height: 1.6; /* Adjust the value as needed */
-        }
-    </style>
     <link rel="stylesheet" href="style.css"
 </head>
 <body>
@@ -25,7 +20,6 @@
             </ul>
         </nav>
         <div class="header-text">
-            <p> Amazon Web Services Engineer</p>
             <div>
             <h1> Hi, I'm   
                 <span class="letter">V</span>
@@ -35,6 +29,7 @@
                 <span class="letter">s</span>
                 <span class="letter">!</span>
             </h1></div>
+            <p> Amazon Web Services Engineer</p>
         </div>
     </div>
 </div>
@@ -44,32 +39,73 @@
     <div class="container">
         <div class="row">
             <div class="about-col-1">
-                <img src="images/user.png">
+                <img src="images/user.png" alt="User Image">
             </div>
             <div class="about-col-2">
                 <h1 class="sub-title">About Me</h1>
                 <p class="description"> Hello! I am Vikas Pinninti, a passionate and dedicated AWS Engineer with a strong foundation in cloud computing. As a recent graduate, I have immersed myself in the world of Amazon Web Services, gaining hands-on experience with various AWS services and tools. My journey into cloud computing started during my studies, where I developed a keen interest in how cloud technologies can transform businesses. I have completed several projects that showcase my ability to design, implement, and manage scalable, secure, and efficient cloud solutions.</p>
-                <p class="description"> I am a certified AWS Solutions Architect – Associate, which has equipped me with the skills to architect and deploy robust and scalable systems on AWS. My hands-on projects and certification have given me practical insights into real-world cloud computing scenarios.</p>
 
-            <div class="tab-titles">
-                <p class="tab-links active-link">Education</p>
-                <p class="tab-links">Skills</p>
-                <p class="tab-links">Internships</p>
-            </div>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('internships')">Internships</p>
+                </div>
 
-            <div class="tab-contents">
-                <ul>
-                    <li><span>UI?UX</span><br> Designing Web App Interfaces</li>
-                    <li><span>UI?UX</span><br> Designing Web App Interfaces</li>
-                    <li><span>UI?UX</span><br> Designing Web App Interfaces</li>
-                    <li><span>UI?UX</span><br> Designing Web App Interfaces</li>
-                </ul>
-            </div>
+                <div class="tab-contents active-tab" id="education">
+                    <ul>
+                        <li><span>COMPUTER SCIENCE AND ENGINEERING</span><br>2021-2025</li>
+                        <li><span>INTERMEDIATE</span><br>2019-2021 -- 78.4%</li>
+                        <li><span>SECONDARY EDUCATION</span><br>2018-2019 -- 88%</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="skills">
+                    <ul>
+                        <li><span>Cloud</span><br>AWS</li>
+                        <li><span>Programming Languages</span><br>Java, Python, C, C++</li>
+                        <li><span>Databases</span><br>MongoDB</li>
+                        <li><span>Platforms</span><br>DevOps, Microsoft Office</li>
+                        <li><span>Operating System</span><br>Linux - Basics</li>
+                        <li><span>Others</span><br>Soft Skills, Problem Solving</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="internships">
+                    <ul>
+                        <li><span>AWS - Cloud Computing</span><br>BRAINOVISION SOLUTIONS PVT. LTD. - 6 Months</li>
+                        <li><span>Artificial Intelligence</span><br>DATAPRO SOLUTIONS - 8 Weeks</li>
+                        <li><span>Java Full Stack</span><br>BRAINOVISION SOLUTIONS PVT. LTD. - 4 Weeks</li>
+                    </ul>
+                </div>
 
             </div>
         </div>
     </div>
 </div>
+
+<!--Services-->
+
+<div id="services">
+
+</div>
+
+<script>
+    function opentab(tabname) {
+        var i;
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].classList.remove("active-link");
+        }
+        for (i = 0; i < tabcontents.length; i++) {
+            tabcontents[i].classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
 
 </body>
 </html>
