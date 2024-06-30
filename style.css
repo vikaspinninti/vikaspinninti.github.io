@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family : 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/* BG*/
+body{
+    background: #080808;/* BG COLOUR*/
+    color: #fff;/* Text Color*/
+}
+
+/* Background Image*/
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/background.png);
+    background-size: cover;
+    background-position: center;
+}
+
+/* Set Margin in left for 10px*/
+.container{
+    padding: 10px 10%;
+}
+
+/* header position*/
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo{
+    width: 140px;
+}
+
+/* arranging header content in a line*/
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 30px;
+}
+
+/* removing link colour to headers */
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative; /* linked the position to hover */
+}
+
+/* hovering the headers*/
+/* Giving underline to headers*/
+nav ul li a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.2s;
+}
+
+/* hover effect*/
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+/* header text*/
+.header-text{
+    margin-top: 20%;
+    font-size: 30px;
+    font-weight: 50;
+    font-style: italic;
+}
+
+.header-text h1{ /* h1 text*/
+    font-size: 60px;
+    margin-top: 20px;
+    font-style: normal;
+}
+
+.header-text h1 span{
+    /* Name Colour*/
+    color: #ff004f;
+    display: inline-block;
+    opacity: 0;/*Header  Animation*/
+    transform: translateY(20px);
+    animation: fadeIn 0.5s forwards;
+}
+
+.header-text h1 span:nth-child(1){
+    animation-delay: 0s;
+}
+
+.header-text h1 span:nth-child(2){
+    animation-delay: 0.1s;
+}
+
+.header-text h1 span:nth-child(3){
+    animation-delay: 0.2s;
+}
+
+.header-text h1 span:nth-child(4){
+    animation-delay: 0.3s;
+}
+
+.header-text h1 span:nth-child(5){
+    animation-delay: 0.4s;
+}
+
+.header-text h1 span:nth-child(6){
+    animation-delay: 0.5s;
+}
+
+
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
