@@ -1,0 +1,115 @@
+About / internships --tab contents
+
+<div class="tab-contents" id="internships">
+                    <ul>
+                        <li><span>AWS - Cloud Computing</span><br>BRAINOVISION SOLUTIONS PVT. LTD. - 6 Months</li>
+                        <li><span>Artificial Intelligence</span><br>DATAPRO SOLUTIONS - 8 Weeks</li>
+                        <li><span>Java Full Stack</span><br>BRAINOVISION SOLUTIONS PVT. LTD. - 4 Weeks</li>
+                    </ul>
+                </div>
+
+
+
+
+About/ internships --  tab titles
+
+                    <p class="tab-links" onclick="opentab('internships')">Internships</p>
+
+
+<div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                </div>
+
+                <div class="tab-contents active-tab" id="education">
+                    <ul>
+                        <li><span>COMPUTER SCIENCE AND ENGINEERING</span><br>2021-2025</li>
+                        <li><span>INTERMEDIATE</span><br>2019-2021 -- 78.4%</li>
+                        <li><span>SECONDARY EDUCATION</span><br>2018-2019 -- 88%</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="skills">
+                    <ul>
+                        <li><span>Cloud</span><br>AWS</li>
+                        <li><span>Programming Languages</span><br>Java, Python, C, C++</li>
+                        <li><span>Databases</span><br>MongoDB</li>
+                        <li><span>Platforms</span><br>DevOps, Microsoft Office</li>
+                        <li><span>Operating System</span><br>Linux - Basics</li>
+                        <li><span>Others</span><br>Soft Skills, Problem Solving</li>
+                    </ul>
+                </div>
+
+
+//my work -- html
+
+<!-- Portfolio-->
+
+<div id="portfolio">
+    <div class="container">
+        <div class="sub-title"> My Work</div>
+        <div class="work-list">
+            
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3> Amazon Web Services</h3>
+                    <p> Launched an Web Page using EC2, VPC, Auto-Scaling, S3 tools</p>
+                   <a href="https://github.com/vikaspinninti/AWS"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> 
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3> Social Media App</h3>
+                    <p> Social Media</p>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3> Social Media App</h3>
+                    <p> Social Media</p>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </div>
+            </div>
+        
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+
+
+
+<!--Skills-->
+
+<div id="skills">
+    <div class="container">
+        <h1 class="sub-title">Skills</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-brands fa-aws"></i>
+                <h2>AWS Cloud Architect</h2>
+                <p>4 weeks internship on Amazon Web Services in Brainovision Solutions Pvt. Ltd.</p>
+                <a href="certificates/AMAZON WEB SERVICES INTERNSHIP CERTIFICATE.pdf">Learn more</a>
+            </div>
+
+            <div>
+                <i class="fa-brands fa-java"></i>
+                <h2>Java Full Stack</h2>
+                <p>4 weeks internship on Java Full Stack in Brainovision Solutions Pvt. Ltd.</p>
+                <a href="certificates/JAVA FULL STACK INTERNSHIP CERTIFICATE.pdf">Learn more</a>
+            </div>
+
+            <div>
+                <i class="fa-brands fa-python"></i>
+                <h2>Artifical Intelligence</h2>
+                <p>8 weeks internship on Artifical Intelligence using Python in Datapro</p>
+                <a href="certificates/ARTIFICIAL INTELLIGENCE INTERNSHIP CERTIFICATE.jpg">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
